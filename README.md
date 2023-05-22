@@ -152,6 +152,7 @@ services:
       - ./site-content:/usr/share/nginx/html
 ```
 
+
 Ejemplo de volume mount donde se crea el volumen `mongo2-volume` y se lo mapea al directorio del contenedor `/data/db`
 
 ```yaml
