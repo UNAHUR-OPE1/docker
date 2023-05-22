@@ -1,0 +1,68 @@
+#Comentario: ESTE ES EL FORMATO DE OCMENTARIO, SOLO SE SOPORTA UNA SOLA LINEA
+escalares:
+# ESCALARES NUMERICOS
+  numericos:
+    subject1: 70
+    subject2: 100
+    # punto separador decimal, sin separador de miles
+    subject3: 100.0000
+# ESCALARES: STRINGS
+  string:
+    string-simple: the cost is 390
+    string-simple2: "the cost is 390"
+    string-simple-linea-de-escape: "the cost is 390\n"
+    multi-linea-str: |
+      ESTE TEXTO OCUPA VARIA LINEAS
+      ESTA ES LA SEGUNDA Y TERCERA
+      LINEA
+    multi-linea-str2: >
+      ESTE ES OTROTEXTO QUE
+      OCUPA VARIA LINEAS
+      ESTA ES LA SEGUNDA Y TERCERA
+      LINEA
+    str3: null
+    str4: ~
+# LISTAS
+listas:
+  ejemplo1:
+    items: [6, 7, 8, 9, 10]
+    name: [six, seven, eight, nine, ten]
+  ejemplo2:
+    items:
+    - 6
+    - 7
+    - 8
+    name:
+      - "six"
+      - "seven"
+      - "eight"
+      - "nine"
+    objetos:
+      - name: "escriorio"
+        pesoKg: 15
+      - name: "heladera"
+        pesoKg: 30
+# DICCIONARIO
+diccionario:
+  students:
+    - name : "jane"
+      age: 23
+      hobbies:
+        - jiu-jitsu
+        - mma
+        - running
+    - name : "john"
+      age: 25
+      hobbies:
+        - music
+        - reading
+        - dancing
+  classes:
+    - name : "Operations"
+      days: [mon]
+      start: 18
+      end: 22
+    - name : "Software Archiqtectura"
+      days: [mon]
+      start: 18
+      end: 22

@@ -1,0 +1,22 @@
+services:
+  web:
+    image: nginx:latest
+    restart: unless-stopped
+    ports:
+      - 8080:80
+    volumes:
+      - ./data/nginx:/usr/share/nginx/html
+  mongodb:
+    image: mongo:6-jammy
+    ports:
+      - '27018:27017'
+    volumes:
+      - mongo2-volume:/data/db
+      - ./config/mongodb/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    restart: unless-stopped
+    environment:
+      - MONGO_INITDB_DATABASE=ope
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=secretos
+volumes:
+  mongo2-volume:
