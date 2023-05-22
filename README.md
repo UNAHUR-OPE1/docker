@@ -94,7 +94,7 @@ diccionario:
 
 ## DOCKER - COMPOSE
 
-Para iniciar los contenedores , posiciónese en la carpeta que contiene el archivo `docker-compose.yaml` y ejecute el comando
+Para iniciar los contenedores , posiciónese en la carpeta que contiene el archivo `docker-compose.yaml` y ejecute el comando.
 
 ```bash
 docker-compose up -d
@@ -152,7 +152,6 @@ services:
       - ./site-content:/usr/share/nginx/html
 ```
 
-
 Ejemplo de volume mount donde se crea el volumen `mongo2-volume` y se lo mapea al directorio del contenedor `/data/db`
 
 ```yaml
@@ -185,5 +184,3 @@ C:\Windows
 ```
 
 En Docker cada contenedor tiene sus propias variables de entorno que no son compartidas con NADA. Es un mecanismo para CONFIGURAR el contenedor, su utilización dependerá de como ha sido empaquetada y programada la imagen del contenedor.
-
-
